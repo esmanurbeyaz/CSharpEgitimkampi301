@@ -1,7 +1,7 @@
 # CSharpEgitimkampi301
 
 Merhaba bu repository Murat YÜCEDAĞ tarafından Youtube üzerinden ilerletilen C# Eğitim Kampı'nın devamıdır. Bu adımda 101 ve 201 de öğrendiğimiz bilgileri SQL ile birleştirilip uygulamalarımızı güçlendirmeye başladık. Artık 301 seviyesindeyiz. Şimdiye kadarki yüklenen kodlarda : 
-- ⭐ SQL database oluşturmayı oluşturulan,
+- ⭐ SQL database oluşturmayı,
 - ⭐ Oluşturulan database'i uygulamamıza çekmeyi, 
 - ⭐ Temel CRUD işlemlerini, 
 - ⭐ Katmanlı mimarinin temellerini, 
