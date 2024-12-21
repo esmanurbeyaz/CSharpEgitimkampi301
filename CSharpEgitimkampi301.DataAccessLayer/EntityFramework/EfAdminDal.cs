@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimkampi301.DataAccessLayer.EntityFramework
 {
-    public class EfAdminDal:GenericRepository<Admin> , IAdminv 
+    public class EfAdminDal:GenericRepository<Admin> , IAdmin
     {
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CSharpEgitimkampi301.BusinessLayer.Abstract;
+using CSharpEgitimkampi301.DataAccessLayer.Abstract;
 using CSharpEgitimkampi301.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,31 +9,44 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimkampi301.BusinessLayer.Concrete
 {
+    
     public class ProductManager : IProductService
     {
+        private readonly IProductDal _productDal;
+
+        public ProductManager(IProductDal productDal)
+        {
+            _productDal = productDal;
+        }
+
         public void TDelete(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Delete(entity);
         }
 
         public List<Product> TGetAll()
         {
-            throw new NotImplementedException();
+            return _productDal.GetAll();
         }
 
         public Product TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _productDal.GetById(id);
+        }
+
+        public List<object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
         }
 
         public void TInsert(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Insert(entity);
         }
 
         public void TUpdate(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Update(entity);
         }
     }
 }
